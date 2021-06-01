@@ -12,7 +12,7 @@ byte mac[] = { 0x54, 0x34, 0x41, 0x30, 0x30, 0x31 };
 //IPAddress ip(192, 168, 168, 246);
 
 EthernetClient client;
-char server[] = "192.168.168.138"; // IP Adres (or name) of server to dump data to
+char server[] = "192.168.168.174"; // IP Adres (or name) of server to dump data to
 unsigned long PreviousMillis = 0;// For when millis goes past app 49 days. 
 //unsigned long interval = 10000;  // Wait between dumps (10000 = 10 seconds)
 unsigned long interval = 60000;  // Wait between dumps (1 min)
@@ -205,5 +205,3 @@ char *float2s(float f, unsigned int digits=2)
   static char buf[16];
   return dtostre(f, buf, digits, 1);
 }
-
-
